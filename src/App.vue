@@ -9,18 +9,20 @@
 
 <script>
 // Importing components here
-import Header from "./components/Header.vue";
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 
 export default {
   name: "App",
   components: {
-    // Registe components here
+    // Register components here
     Header,
+    Tasks,
   },
   // Using Data in App.vue component to have access to all components
   data() {
     return {
-      tasks: [{}],
+      tasks: [],
     };
   },
   // Here, you can make HTTP Request,
@@ -49,7 +51,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
