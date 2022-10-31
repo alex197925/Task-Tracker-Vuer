@@ -1,19 +1,31 @@
-# vue-course-2022
+<!-- @format -->
 
-## Project setup
-```
-npm install
-```
+### Vue-Course-2022
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Use Vue CLI
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Create first component
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+<template>
+  <header>
+    <h1>Task Tracker</h1>
+  </header>
+</template>
+
+<script lang="ts">
+export default {
+  name: "Header",
+};
+</script>
+
+<!-- Scoped - style only for this componenet -->
+<style scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+</style>
+```
