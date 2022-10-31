@@ -3,7 +3,7 @@
 <template>
   <div class="container">
     <!-- Use components Here -->
-    <Header />
+    <Header title="Task Tracker" />
   </div>
 </template>
 

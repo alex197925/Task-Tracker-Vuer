@@ -1,0 +1,18 @@
+<!-- @format -->
+
+<template>
+  <!-- Add style to button by passing props -->
+  <button :style="{ background: color }" class="btn">{{ text }}</button>
+</template>
+
+<script lang="ts">
+export default {
+  name: "Button",
+  props: {
+    text: String,
+    color: String,
+  },
+};
+</script>
+
+<style></style>
