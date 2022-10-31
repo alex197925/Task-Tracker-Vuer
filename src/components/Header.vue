@@ -8,7 +8,7 @@
   </header>
 </template>
 
-<script lang="ts">
+<script>
 // Importing Button
 import Button from "./Button.vue";
 
