@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 // Importing components here
 import Header from "./components/Header.vue";
 
@@ -16,6 +16,34 @@ export default {
   components: {
     // Registe components here
     Header,
+  },
+  // Using Data in App.vue component to have access to all components
+  data() {
+    return {
+      tasks: [{}],
+    };
+  },
+  // Here, you can make HTTP Request,
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: "Doctors Appointment",
+        day: "December 3rd at 1:30pm",
+        remainder: true,
+      },
+      {
+        id: 2,
+        text: "Meeting at School",
+        day: "December 1st at 2:30pm",
+        remainder: true,
+      },
+      {
+        id: 3,
+        text: "Food Shopping",
+        day: "December 3rd at 11:00am",
+      },
+    ];
   },
 };
 </script>
